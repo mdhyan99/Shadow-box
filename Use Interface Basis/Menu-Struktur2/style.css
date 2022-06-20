@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 500;  
+}
+body {
+    background-color: #eee;
+}
+.menu {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    height: 60px;
+}
+.menu #logo {
+    float: left;
+height: 30px;
+padding: 15px 30px;
+ font-size: 1.2em;
+ line-height: 30px ;
+}
+.menu > ul {
+    margin:  0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
+}
+.menu > ul > li {
+   float:left; 
+}
+.menu-item {
+    display: inline-block;
+    padding: 15px 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu-item:hover {
+    background-color: #ff0055;
+}
+.sup-content {
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+    background-color: #333;
+    max-height: 0;
+}
+.sup-content a {
+    color: #fff;
+    text-decoration: none;
+}
+.sup-drop {
+    padding: 0;
+}
+.sup-drop  ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.sup-drop ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+}
+.sup-drop ul li:hover {
+    background-color: #ff0055;
+}
+.menu-item:focus {
+    background-color: #ff0055;
+}
+.menu ul li:hover  .sup-content {
+max-height: 400px;
+transition: max-height 0.3s ease-in;
+-webkit-transition: max-height 0.3s ease-in;
+-moz-transition: max-height 0.3s ease-in;
+}
+
+.list{
+    background: #000000;
+    visibility: hidden;
+    opacity: 0;
+    width: 50px;
+    position: absolute;
+    transition: all 0.7s ease-in;
+    margin-top: 0px;
+    left: 130px;
+    display: none;
+  }
+  .sup-content li .list:hover  {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    
+  }

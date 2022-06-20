@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+margin: 0;
+height: 100%;
+padding: 0;
+}
+header {
+width: 100%;
+position: fixed;
+top: 0;
+
+  
+
+}
+.menu {
+    background: rgba(7, 19, 195, 0.783);
+    text-align: center;
+    
+}
+.menu {
+    background-image: linear-gradient(to right, rgba(68, 48, 100, 0.444),rgba(136, 208, 21, 0.786), rgb(198, 107, 65) ,rgba(203, 59, 59, 0.745));
+     
+}
+.menu ul {
+display: inline-flex;
+list-style: none;
+color: #fff;
+}
+.menu ul li {
+    width: 120px;
+    margin: 0px;
+padding: 15px;
+border-radius: 15px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu ul li:hover{
+background:#198c45 ;
+border-radius: 15px;
+}
+.menu .fa {
+    margin-right: 8px;
+}
+.sub-menu-1 {
+    display: none;
+}
+/* start Drop-menu */
+.menu ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background:rgb(0,100,0) ;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.menu ul li:hover .sub-menu-1 ul {
+    display: block;
+    
+}
+.menu ul li:hover .sub-menu-1 ul li {
+    width: 135px;
+    padding: 15px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+.menu ul li:hover .sub-menu-1 ul li a:hover {
+    color: rgb(41, 69, 93);
+}
+.sub-menu2 {
+    display: none;
+}
+.hover-me:hover .sub-menu2  {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 120px;
+    background:rgb(96, 153, 196) ;
+    border-radius: 15px;
+}
+#main {
+padding-top: 50px;
+}
+footer{
+    background-color: #7fc399;
+  text-align: center;
+  position: fixed;
+ bottom: 0;
+ width: 100%;
+}
+
+footer p a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+
+}
+ 
