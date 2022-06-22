@@ -1,0 +1,47 @@
+.herren {
+display: grid;
+grid-template-columns: repeat(1fr);
+  grid-template-rows: auto 1fr;
+}
+.section-title {
+    background-image: url(../css/imags/kleid.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+}
+.section-title__h1{
+    padding-top: 10vh;
+    color: darkorange;
+    font-weight: 900;
+}
+.herren-text {
+    background-color: lightgrey;
+    padding: 20px 0px;
+}
+.herren-gruppe {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    margin-bottom: 50px;
+ 
+}
+.herren-tshirt ,.herren-schuhe {
+    background-color: #eee;
+}
+.herren__img {
+    border-radius: 5PX;
+    width: 100%;
+    height: 200px;
+}
+.herren-a{
+    text-decoration: none;
+    color: coral;
+    font-size: 15px;
+}
+.paragraph-herren {
+    font-size: 12px;
+}
+.herren-gruppe__sup{
+    color: red;
+}

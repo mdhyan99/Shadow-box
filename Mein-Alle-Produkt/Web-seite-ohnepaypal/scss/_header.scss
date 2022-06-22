@@ -1,0 +1,20 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(184, 184, 184, 0.904);
+    padding: 0 20px;
+}
+.header-logo {
+}
+.header-logo__img{
+    width: 70px;
+border-radius: 30%;
+}
+.header-nav__list {
+    text-decoration: none;
+padding: 0 10px;
+}
+.header-icons__input{
+width: 120px;
+}

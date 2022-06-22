@@ -4,104 +4,261 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <link
-        href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet"/>
+        <link rel="stylesheet" href="css/style.css" />
+        <script
+            src="https://kit.fontawesome.com/20a4bdb3fb.js"
+            crossorigin="anonymous"
+        ></script>
         <script
             src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR"
             data-sdk-integration-source="button-factory"
         ></script>
-        <title>Mein Webshop</title>
+        <title>Cool shop</title>
     </head>
     <body>
+
         <header>
-          
- <div class="navContainer">
-    <div class="logo">
-        <button><span class="material-icons">
-            redeem
-            </span> Mein Webshop <span class="material-icons">
-            store
-            </span></button>
-    </div>
-    <div class="navigation1">
-        <nav>
-            <ul>
-                <li><a href="#">Startseite</a></li>
-                <li><a href="#damen">Damen</a></li>
-                <li><a href="#herren">Herren</a></li>
-                <li><a href="#kinder">Kinder</a></li>
-                <li><a href="#impressum">Impressum</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="search">
-        <input type="search" />
-      <a href="#">  <span class="material-icons"> search </span></a>
-        <a href="#"><span class="material-icons"> shopping_cart</span></a>
-    </div>
- </div>
-    </header>
-        <main>
-           <b> <h1>Willkommen in unseren Webseite </h1></b>
-            <div id="herren">
-                <a href="#">  <h2>Damen Kleid und Schuh</h2></a>
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, aliquam! Ullam aliquam ipsa modi enim facilis consequuntur libero unde accusamus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, fugiat!</p>
+            <div class="header-logo">
+                <img class="header-logo__img" src="./css/imags/logo6.png" alt="" />
+            </div>
+            <nav class="header-nav__liste">
+                <a class="header-nav__list" href="#">Startseite</a>
+                <a class="header-nav__list" href="#">Damen</a>
+                <a class="header-nav__list" href="#">Herren</a>
+                <a class="header-nav__list" href="#">Kinder</a>
+            </nav>
+            <div class="header-icons">
+                <input class="header-icon header-icons__input" type="search" />
+                <a class="header-icon header-icons__search" href="#">
+                    <i class="material-icons fa-solid fa-magnifying-glass"></i
+                ></a>
+                <a class="header-icon header-icons__shopwagen" href="#"
+                    ><i class="material-icons fa-solid fa-cart-shopping"></i
+                ></a>
+            </div>
+        </header>
+        <!-- End header -->
+        <section>
+                <div class="section-title">
+                  <h1 class="section-title__h1">Willkommen in unseren Cool Shop</h1>
+              </div>
+              <!-- Start Herren   -->
+            <div class="herren">
+                <div class="herren-text">
+                    <a class="herren-a herren-text__a" href="#"> <h2 class="headline herren-text__h2">Herren Produkte</h2></a>
+                    <p class="paragraph-herren herren-text__p">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Iste, dolor. Lorem ipsum dolor sit amet
+                       
+                    </p>
+                </div>
+            <div class="herren-gruppe">
                 <div class="herren-tshirt" id="herren-tshirt">
-                    <img
-                      width="80" height="90"  src="https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80 "
+                    <img class="herren__img herren-tshirt__img" 
+                        src="./css/imags/t-shirt.jpg"
                         alt="Bild von einem T-Shirt"
                     />
-                    <a href="#"><h2>Geiles T-Shirt</h2></a>
-                    <p>
-                        Das ist coole T-Shirt .Es ist so schön mmbjkjhj gkuhilk ufgulki
+                    <a class="herren-a herren-tshirt__a"  href="#"><h2 class="headline  herren-tshirt__h2" >T-Shirt</h2></a>
+                    <p class="paragraph-herren herren-tshirt__p" >
+                        <i>Höchste Druck- und Materialqualität</i> <br>
+                        <u>Preis</u> <br>
+                        <b>nur mit: <sub class="herren-gruppe__sup">13,99€</sub></b>
+
                     </p>
-                    <div id="smart-button-container">
-                        <div style="text-align: center">
-                            <div id="paypal-button-tshirt"></div>
-                        </div>
-                    </div>
                 </div>
-        
-                <div class="herren-schuh" id="herren-schuh">
-                    <img
-                       width="80" height="90" src="https://images.unsplash.com/photo-1570051779696-244e9f680cf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                <div class="herren-tshirt" id="herren-tshirt">
+                    <img class="herren__img herren-tshirt__img" 
+                        src="./css/imags/Hemd.jpg"
+                        alt="Bild von einem Hemd"
+                    />
+                    <a class="herren-a herren-tshirt__a"  href="#"><h2 class="headline  herren-tshirt__h2" >Geiles Hemd</h2></a>
+                    <p class="paragraph-herren herren-tshirt__p" >
+                        Das ist coole Hemd Es ist so schön
+                    </p>
+                </div>
+                <div class="herren-tshirt" id="herren-tshirt">
+                    <img class="herren__img herren-tshirt__img" 
+                        src="./css/imags/unterhemd.jpg" 
+                        alt="Bild von einem Unterhemd"
+                    />
+                    <a class="herren-a herren-tshirt__a"  href="#"><h2 class="headline  herren-tshirt__h2" >Geile Unterhemd</h2></a>
+                    <p class="paragraph-herren herren-tshirt__p" >
+                        Das ist coole Unterhemd Es ist so schön
+                    </p>
+                </div>
+                <div class="herren-schuhe" id="herren-schuh">
+                    <img class="herren__img herren-schuhe__img"
+                        src="./css/imags/Hose.jpeg"
+                        alt="Bild von einem Hose"
+                    />
+                    <a class="herren-a herren-schuhe__a" href="#"><h2 class="headline herren-schuhe__h2  " >Toller Hose</h2></a>
+                    <p class="paragraph-herren herren-schuhe__p">Das ist coolen Hose .Es ist so schön</p>
+                </div>
+                <div class="herren-tshirt" id="herren-tshirt">
+                    <img class="herren__img herren-tshirt__img" 
+                        src="./css/imags/Stiefel.jpg"
+                        alt="Bild von einem Stiefel"
+                    />
+                    <a class="herren-a herren-tshirt__a"  href="#"><h2 class="headline  herren-tshirt__h2" >Geiles Stiefel</h2></a>
+                    <p class="paragraph-herren herren-tshirt__p" >
+                        Das ist coole Stiefel.Es ist so schön
+                    </p>
+                </div>
+
+                <div class="herren-schuhe" id="herren-schuh">
+                    <img class= "herren__img herren-schuhe__img"
+                        src="./css/imags/schuh.jpeg"
                         alt="Bild von einem Schuh"
                     />
-                    <a href="#"><h2>Toller Schuh</h2></a>
-                    <p>Das ist coolen Schuh .Es ist so schön</p>
-                    <div id="smart-button-container">
-                        <div style="text-align: center">
-                            <div id="paypal-button-schuh"></div>
-                        </div>
-                    </div>
+                    <a class="herren-a herren-schuhe__a" href="#"><h2 class="headline herren-schuhe__h2  " >Toller Schuh</h2></a>
+                    <p class="paragraph-herren herren-schuhe__p">Das ist coolen Schuh .Es ist so schön</p>
                 </div>
-             </div>
-               <div id="damen">
-                 <a href="#">  <h2>Damen Kleid und Schuh</h2></a>
-                  <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, aliquam! Ullam aliquam ipsa modi enim facilis consequuntur libero unde accusamus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, fugiat!</p>
+            </div>
+            </div>
+              <!-- End Herren   -->
+            <!-- Start Damen -->
+            <div class="damen herren">
+                <div class="herren-text">
+                    <a class="herren-a herren-text__a" href="#"> <h2 class="headline herren-text__h2">Damen Produkte</h2></a>
+                    <p class="paragraph-herren herren-text__p">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Iste, dolor. Lorem ipsum dolor sit amet
+                       
+                    </p>
+                </div>
+            <div class="herren-gruppe">
+                <div class="herren-tshirt" id="herren-tshirt">
+                    <img class="herren__img herren-tshirt__img" 
+                        src="./css/imags/frau-t-shirt.jpg"
+                        alt="Bild von einem T-Shirt"
+                    />
+                    <a class="herren-a herren-tshirt__a"  href="#"><h2 class="headline  herren-tshirt__h2" >Geiles T-Shirt</h2></a>
+                    <p class="paragraph-herren herren-tshirt__p" >
+                        Das ist coole T-Shirt Es ist so schön
+                    </p>
+                </div>
+                <div class="herren-tshirt" id="herren-tshirt">
+                    <img class="herren__img herren-tshirt__img" 
+                        src="./css/imags/frau-hemd.jpeg"
+                        alt="Bild von einem Hemd"
+                    />
+                    <a class="herren-a herren-tshirt__a"  href="#"><h2 class="headline  herren-tshirt__h2" >Geiles Hemd</h2></a>
+                    <p class="paragraph-herren herren-tshirt__p" >
+                        Das ist coole Hemd Es ist so schön
+                    </p>
+                </div>
+                <div class="herren-tshirt" id="herren-tshirt">
+                    <img class="herren__img herren-tshirt__img" 
+                        src="./css/imags/frau-unterhemd.jpeg" 
+                        alt="Bild von einem Unterhemd"
+                    />
+                    <a class="herren-a herren-tshirt__a"  href="#"><h2 class="headline  herren-tshirt__h2" >Geile Unterhemd</h2></a>
+                    <p class="paragraph-herren herren-tshirt__p" >
+                        Das ist coole Unterhemd Es ist so schön
+                    </p>
+                </div>
+                <div class="herren-schuhe" id="herren-schuh">
+                    <img class="herren__img herren-schuhe__img"
+                        src="./css/imags/frau-hose.jpeg"
+                        alt="Bild von einem Hose"
+                    />
+                    <a class="herren-a herren-schuhe__a" href="#"><h2 class="headline herren-schuhe__h2  " >Toller Hose</h2></a>
+                    <p class="paragraph-herren herren-schuhe__p">Das ist coolen Hose .Es ist so schön</p>
+                </div>
+                <div class="herren-tshirt" id="herren-tshirt">
+                    <img class="herren__img herren-tshirt__img" 
+                        src="./css/imags/fru-stiefel.jpeg"
+                        alt="Bild von einem Stiefel"
+                    />
+                    <a class="herren-a herren-tshirt__a"  href="#"><h2 class="headline  herren-tshirt__h2" >Geiles Stiefel</h2></a>
+                    <p class="paragraph-herren herren-tshirt__p" >
+                        Das ist coole Stiefel.Es ist so schön
+                    </p>
+                </div>
+
+                <div class="herren-schuhe" id="herren-schuh">
+                    <img class= "herren__img herren-schuhe__img"
+                        src="./css/imags/frau-schuh.jpeg"
+                        alt="Bild von einem Schuh"
+                    />
+                    <a class="herren-a herren-schuhe__a" href="#"><h2 class="headline herren-schuhe__h2  " >Toller Schuh</h2></a>
+                    <p class="paragraph-herren herren-schuhe__p">Das ist coolen Schuh .Es ist so schön</p>
+                </div>
+            </div>
+            </div>
+            <!-- End Damen -->
+            <div id="damen">
+                <a href="#"> <h2>Damen Kleid und Schuh</h2></a>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste, dolor. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Maiores, aliquam! Ullam aliquam ipsa modi
+                    enim facilis consequuntur libero unde accusamus?Lorem ipsum,
+                    dolor sit amet consectetur adipisicing elit. Quia, fugiat!
+                </p>
                 <div class="frauen-tshirt" id="frauen-tshirt">
-                    <img width="80" height="90"
-        src="https://sissy-schule.de/wp-content/uploads/2021/04/SIDDONS-Kurzarm-T-Shirt-frauen-Mode-Sommer-Sexy-Eng-anliegende-Farbe-Top-T-shirts-Brief-Drucken-2.jpg "
+                    <img
+                        width="80"
+                        height="90"
+                        src=" "
                         alt="Bild von einem frauen-T-Shirt"
                     />
                     <a href="#"><h2>Geiles T-Shirt</h2></a>
-                    <p>
-                        Das ist coole T-Shirt .
-                    </p>
+                    <p>Das ist coole T-Shirt .</p>
                     <div id="smart-button-container">
                         <div style="text-align: center">
                             <div id="paypal-button-frauen-tshirt"></div>
                         </div>
                     </div>
                 </div>
-                <div class="frauen <h1>Willkommen in unseren Webseite </h1>-schuh" id="frauen-schuh">
-                    <img width="80" height="90"
+                <div class="frauen-schuh" id="frauen-schuh">
+                    <img
+                        width="80"
+                        height="90"
                         src="https://www.petra.de/sites/default/files/styles/amp_image_ratio_16x9/public/media/2014/06/frau-mit-schuh-a-16174.jpg?itok=TLvaLo24"
                         alt="Bild von einem frauen-Schuh"
                     />
-                   <a href="#"> <h2>Toller Schuh</h2></a>
+                    <a href="#"> <h2>Toller Schuh</h2></a>
+                    <p>Das ist coolen chuh .Es ist so schön</p>
+                    <div id="smart-button-container">
+                        <div style="text-align: center">
+                            <div id="paypal-button-frauen-schuh"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="kinder">
+                <a href="#"> <h2>Kinder Kleid und Schuh</h2></a>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste, dolor. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Maiores, aliquam! Ullam aliquam ipsa modi
+                    enim facilis consequuntur libero unde accusamus?Lorem ipsum,
+                    dolor sit amet consectetur adipisicing elit. Quia, fugiat!
+                </p>
+                <div class="kinder-tshirt" id="kinder-tshirt">
+                    <img
+                        width="80"
+                        height="90"
+                        src="https://www.bavarian-caps.de/images/product_images/original_images/pumuckl-kinder-tshirt-1.jpg"
+                        alt="Bild von einem Kinder-T-Shirt"
+                    />
+                    <a href="#"> <h2>Geiles T-Shirt</h2></a>
+                    <p>Das ist coole T-Shirt .</p>
+                    <div id="smart-button-container">
+                        <div style="text-align: center">
+                            <div id="paypal-button-frauen-tshirt"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kinder-schuh" id="kinder-schuh">
+                    <img
+                        width="80"
+                        height="90"
+                        src="https://images.ctfassets.net/znoknm65bujs/11b1aBl39mzNTB03voQses/0dc85ded1a2ea9fff0b2e3935c192d82/affenzahn-barfussschuhe-lauflerner-knit-genug-platz-zum-wachsen.jpg?w=400"
+                        alt="Bild von einem Kinder-Schuh"
+                    />
+                    <a href="#"><h2>Toller Schuh</h2></a>
                     <p>Das ist coolen Schuh .Es ist so schön</p>
                     <div id="smart-button-container">
                         <div style="text-align: center">
@@ -109,49 +266,14 @@
                         </div>
                     </div>
                 </div>
-               </div>
-          <div id="kinder">
-            <a href="#">  <h2>Kinder Kleid und Schuh</h2></a>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, aliquam! Ullam aliquam ipsa modi enim facilis consequuntur libero unde accusamus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, fugiat!</p>
-            <div class="kinder-tshirt" id="kinder-tshirt">
-                <img width="80" height="90"
-    src="https://www.bavarian-caps.de/images/product_images/original_images/pumuckl-kinder-tshirt-1.jpg"
-                    alt="Bild von einem Kinder-T-Shirt"
-                />
-               <a href="#"> <h2>Geiles T-Shirt</h2></a>
-                <p>
-                    Das ist coole T-Shirt .
-                </p>
-                <div id="smart-button-container">
-                    <div style="text-align: center">
-                        <div id="paypal-button-frauen-tshirt"></div>
-                    </div>
-                </div>
             </div>
-            <div class="kinder-schuh" id="kinder-schuh">
-                <img width="80" height="90"
-                    src="https://images.ctfassets.net/znoknm65bujs/11b1aBl39mzNTB03voQses/0dc85ded1a2ea9fff0b2e3935c192d82/affenzahn-barfussschuhe-lauflerner-knit-genug-platz-zum-wachsen.jpg?w=400"
-                    alt="Bild von einem Kinder-Schuh"
-                />
-                <a href="#"><h2>Toller Schuh</h2></a>
-                <p>Das ist coolen Schuh .Es ist so schön</p>
-                <div id="smart-button-container">
-                    <div style="text-align: center">
-                        <div id="paypal-button-frauen-schuh"></div>
-                    </div>
-                </div>
-            </div>
-        
-          </div>
-    
-        </main>
+        </section>
         <div id="footer">
             <p id="impressum">
                 <a href="#">Impressum</a> <br />
-               <a href="#"> Namestr. 2</a> <br />
-     <a href="#"> 66666 Musterstand </a><br />
+                <a href="#"> Namestr. 2</a> <br />
+                <a href="#"> 66666 Musterstand </a><br />
             </p>
         </div>
-        <script src="logik.js"></script>
     </body>
 </html>
