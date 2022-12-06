@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const form = document.querySelector("form");
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault();
+
+                    console.log(form.elements.vorname);
+                    const vorname = form.elements.vorname;
+                    const nachname = form.elements.nachname;
+                    const email = form.elements.email;
+                    const password = form.elements.password;
+                    console.log(form.elements.password);
+
+                    const passWiederhol = form.elements.passWiederhol;
+                    console.log(form.elements.passWiederhol);
+
+                    const date = form.elements.date;
+                    console.log(form.elements.date);
+
+                    const AGB = form.elements.AGB.checked;
+                    const datenschutz = form.elements.datenschutz.checked;
+
+                    const passwordzeigen =
+                        document.querySelector(".passwordzeigen");
+                    passwordzeigen.addEventListener("click", function () {
+                        password.type = (password.type = "password") ? "text" : "password";
+                    });
+                    if (
+                        vorname.value === "" ||
+                        email.value === "" ||
+                        passWiederhol.value === "" ||
+                        password.value === "" ||
+                        date.value === "" ||
+                        AGB === false ||
+                        datenschutz.value === false ||
+                        password.value !== passWiederhol.value
+                    ) {
+                        alert("Das Formular ist fehlerhaft!");
+                    }
+                    if (vorname.value === "") {
+                        const error = document.createElement("p");
+                        console.log("test");
+                        error.innerText = "bitte ein vorname eingeben ";
+                        nachname.parentElement.before(error);
+                    }
+                    if (email.value === "") {
+                        const error = document.createElement("p");
+                        console.log("test");
+                        error.innerText = "bitte ein Email eingeben ";
+                        password.parentElement.before(error);
+                    }
+                    if (password.value === "") {
+                        const error = document.createElement("p");
+                        console.log("test");
+                        error.innerText = "bitte ein pasword eingeben ";
+                        passWiederhol.parentElement.before(error);
+                    }
+                    form.submit();
+
+                    form.reset();
+                });
+            });
+        </script>
+        <style>
+            body {
+                background-color: rgb(171, 171, 140);
+                text-align: center;
+            }
+            input {
+                margin: 20px;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="GET">
+            <fieldset>
+                <label for=""
+                    >Vorname
+                    <input type="text" placeholder="vorname" name="vorname" />
+                </label>
+                <br />
+                <label>
+                    Nachname
+                    <input type="text" placeholder="nachname" name="nachname" />
+                </label>
+                <br />
+                <label
+                    >E-Mail-Adresse
+                    <input type="email" placeholder="Email" name="email" />
+                </label>
+                <br />
+                <label
+                    >Passwort
+                    <input
+                        type="password"
+                        placeholder="password"
+                        name="password"
+                    />
+                </label>
+                <button class="passwordzeigen">Passordzeigen</button>
+                <br />
+                <label
+                    >Passwort wiederholen
+                    <input
+                        type="password"
+                        placeholder="password wiederholen"
+                        name="passWiederhol"
+                    />
+                </label>
+                <br />
+                <div class="date">
+                    <label for="">Geburtstag</label>
+                    <input type="date" name="date" />
+                </div>
+                <label for="age">Alter</label>
+                <input id="age" min="18" type="number" />
+                <br />
+                <label>
+                    <textarea
+                        name="kleine Vorstellung"
+                        id=""
+                        cols="30"
+                        rows="10"
+                        placeholder="kleine Vorstellung"
+                    ></textarea>
+                </label>
+                <br />
+                <br />
+                <label>Geschlecht</label>
+                <select name="geschlecht" id="ad">
+                    <option value="Männlich">Männlich</option>
+                    <option value="Weiblich">Weiblich</option>
+                </select>
+                <br />
+                <input type="checkbox" name="AGB" value="zustimm" id="check1" />
+                <label for="check1"
+                    >Zustimmung AGB (AllgemeineGeschäftsbedingungen)</label
+                >
+                <br />
+                <input
+                    type="checkbox"
+                    name="datenschutz"
+                    value="daten"
+                    id="check2"
+                />
+                <label for="check2">Zustimmung Datenschutz</label>
+                <br />
+                <input type="submit" value="Speicher" />
+                <input type="reset" value="zurükzetzen" />
+            </fieldset>
+        </form>
+    </body>
+</html>

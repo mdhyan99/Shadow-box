@@ -1,0 +1,12 @@
+let marvinNschname = "Schjdkk";
+console.log( marvinNschname);
+let marvinanzal = "17";
+console.log( marvinanzal, typeof marvinanzal);
+let marvinacoderscool = true;
+console.log( marvinacoderscool);
+let marvinacoderscoo ;
+console.log( marvinacoderscoo);
+let marvinacodersco =null;
+console.log( marvinacodersco);
+const marvinacodersc =true;
+console.log( marvinacodersc, typeof marvinacodersc);

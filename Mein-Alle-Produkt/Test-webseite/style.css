@@ -1,0 +1,466 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+   }
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1.25rem;
+background-color: #eee;
+background-size: cover;
+}
+/* :start Header */
+
+header{
+    background-image: linear-gradient(to right, 
+    rgba(68, 48, 100, 0.444)
+    ,rgba(136, 208, 21, 0.786)
+    , rgb(198, 107, 65) 
+    ,rgba(203, 59, 59, 0.745));
+padding-top: 20px;
+    font-size: 15px; 
+    height: 80px;
+    border-radius: 10px;
+    
+}
+header ul {
+    display: inline-flex;
+
+    list-style: none;
+  
+color: #fff;
+
+font-size: 20px;
+
+
+}
+header ul li {
+    top: 20px;
+    width: 50vw;
+border-radius: 15px;
+
+
+}
+header ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+
+}
+.active, header ul li:hover{
+background:#198c45 ;  height: 80px;
+border-radius: 15px;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+header ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background:rgba(21, 113, 21, 0.721) ;
+    margin-top: 32px;
+    margin-left: -24px;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 200px;
+    
+    
+}
+header ul li:hover .sub-menu-1 ul {
+    display: block;   
+}
+header ul li:hover .sub-menu-1 ul li {
+    width: 110px;
+    
+    padding: 15px;
+    font-size: 12px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+header ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+header ul li:hover .sub-menu-1 ul li a:hover {
+    color: rgb(41, 69, 93);
+}
+.sub-menu2 {
+    display: none;
+}
+.sub-menu5 {
+    display: none;
+}
+.Alle-Produkte:hover .sub-menu5  {
+    position: absolute;
+    font-size: 15px;
+    display: block;
+    margin-top: -22px;
+    margin-left: 90px;
+    background:rgba(18, 95, 18, 0.879) ;
+    border-radius: 15px;
+    height: 250px;
+}
+.hover-me:hover .sub-menu2  {
+    font-size: 15px;
+    position: absolute;
+    display: block;
+    margin-top: -31px;
+    margin-left: 90px;
+    background:rgba(18, 95, 18, 0.879) ;
+    border-radius: 15px;
+    height: 210px;
+}
+h1 {
+    background-color: white;
+    word-spacing: -1px;
+    font-size: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    text-shadow: 0 0 10px hsl(0, 70%, 56%);
+    border-radius: 15px;
+} 
+/* Herren start */
+.Herren-produkte{
+    background-color:rgb(213, 219, 219);
+    text-align: center;
+    padding: 20px;
+    
+}
+.Herren-produkte > .schrift>a {
+    text-align: center;
+    text-decoration: none;
+    color: coral;
+}
+.Herren-produkte > .schrift >p {
+    color: rgb(169, 118, 118);
+ padding-left: 20%;
+ padding-right: 20%;
+        font-size: 10px;
+        padding-bottom: 10px;
+        margin: 15px;
+    }
+.herren {
+    background-color: rgb(229, 244, 238);
+    border: 2px solid rgba(234, 242, 219, 0);
+    border-radius: 13px;
+    padding: 0.5rem;
+    display: flex;
+flex-wrap: wrap;
+
+ justify-content: space-around; 
+ align-content: space-around;
+}
+.teil1  {
+    box-shadow: 0 0 5px rgba(0,0, 0, 0.2);
+border-radius: 20px;
+background-color: rgba(174, 229, 229, 0.282);
+border-top: 1px solid rgba(238, 95, 95, 0.532);
+border-left: rgb(238, 95, 95);
+padding: 30px;
+min-width: 300px;
+max-width: 300px;
+min-height: 380px;
+height:30%;
+color: coral;
+    }
+ .herren-tshirt> img , .herren-schuh> img ,
+ .herren-jacke >img ,.herren-hose >img{
+        border-radius: 50% ;
+        }
+ .kinder-schuh > img  ,.kinder-tshirt > img
+ {
+ border-radius: 50% ;
+ }
+        .herren >p ,.herren-tshirt>p , .herren-schuh>p
+,.herren-jacke >p ,.herren-hose>p{
+    color: rgba(244, 38, 76, 0.874);
+    padding: 5px;
+}
+strong {
+    font-size: 15px;
+    color: black;
+}
+del {
+    color: red;
+}
+.herren >a,.herren-tshirt>a, .herren-schuh>a 
+,.herren-jacke >a ,.herren-hose>a{
+  color: rgba(71, 144, 194, 0.598);
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 350px; 
+    text-decoration: none;width: 90vw;
+    font-size: 15px;
+}
+.pay>input{
+   display: inline;
+   position:absolute;
+   z-index: 2;
+   width: 50%;
+   margin-bottom : 50px;
+}
+.pay1 >input{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    margin-top:10px ;
+}
+.pay2 >input {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+   margin-top: 10px;
+}
+          /* end herren */
+    .Kinder-produkte {
+        background-color:rgb(213, 219, 219);
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px; 
+    }
+    .Kinder-produkte> .schrift3>a {
+        text-align: center;
+        text-decoration: none;
+        color: coral;
+      
+    }
+    .Kinder-produkte > .schrift3 > a >h2 ,
+    .Herren-produkte > .schrift >a >h2 ,
+    .Damen-produkte > .dam>.schrift2 >a >h2{
+        border: 1px solid red;
+        display: inline-block;
+        width: 300px;
+        border-radius: 20px;
+       background: rgba(255, 255, 255, 0.777);
+    }
+  
+    .Kinder-produkte > .schrift3 >p {
+        color: rgb(169, 118, 118);
+     padding-left: 20%;
+     padding-right: 20%;
+            font-size: 10px;
+            padding-bottom: 10px;
+            margin: 15px;
+        }
+        .teil3 {
+        box-shadow: 0 0 5px rgba(0,0, 0, 0.2);
+        border-radius: 20px;
+        background-color: rgba(174, 229, 229, 0.282);
+        border-top: 1px solid rgb(245, 65, 65);
+        padding: 30px;
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 380px;
+    }
+.kinder {
+    background-color: rgb(229, 244, 238);
+    border: 2px solid rgba(234, 242, 219, 0);
+    border-radius: 13px;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+/* flex-wrap: wrap; */
+/* align-content: flex-start; */
+ /* justify-content: space-around;  */
+}
+.kinder >p ,.kinder-tshirt>p , .kinder-schuh>p{
+    color: rgba(214, 39, 71, 0.696);
+    font-size: 15px;
+}
+.kinder >a ,.kinder-tshirt>a , .kinder-schuh>a {
+    color: rgba(71, 144, 194, 0.598);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+}
+.damen {
+    
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill ,300px) minmax(100px,1fr);
+    position: relative;
+    grid-template-rows: repeat(2,1fr); */
+}
+.teil2 {
+margin: 20px;
+min-width: 300px;
+max-width: 300px;
+min-height: 380px;
+border-radius: 20px;
+
+}
+.dam {
+    background-color: #eee;
+    border-radius: 13px;
+    padding: 30px;
+}
+.Damen-produkte {
+    background-color:rgb(213, 219, 219);
+    padding: 20px;
+    text-align: center;
+}
+.dam> .schrift2 >p {
+color: rgb(169, 118, 118);
+padding-left: 20%;
+padding-right: 20%;
+font-size: 15px;
+margin: 10px;
+}
+.dam> .schrift2 >a {
+    text-decoration: none;
+    font-size: 15px;
+    color: coral;
+}
+.frauen-schuh ,.frauen-tshirt {
+    text-align: center;
+    border: 1px solid rgb(222, 213, 213);
+    padding  : 20px;
+    
+
+}
+.frauen-tshirt> img , .frauen-schuh> img{
+border-radius: 50% ;
+margin: 20px;
+}
+.damen >p ,.frauen-tshirt>p , .frauen-schuh>p
+{
+    color: rgba(97, 38, 38, 0.548);
+    font-size: 15px;
+text-align: center;
+
+}
+.damen >a,.frauen-tshirt>a, .frauen-schuh>a 
+{
+    color: rgba(71, 144, 194, 0.598);
+    text-decoration: none;
+    font-size: 8px;
+}
+.frauen-schuh , .frauen-tshirt 
+{
+    display: inline-block;
+}
+/* damen */
+
+footer {
+ 
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(168, 186, 135);
+    z-index: 2;
+   bottom: 0;
+    font-size: 10px;
+    
+}
+#impressum > a{
+text-decoration: none;
+
+}
+
+#impressum > a:hover {
+    color: white;
+}
+
+
+/* 
+#damen {
+position: absolute;
+border: 2px solid rgb(133, 104, 104);
+left: 20px;
+width: 180px;
+height: 200px;
+margin-top: 300px;
+text-align: center;
+font-size: 5px;
+border-radius: 10px;
+}
+#damen  > a>h2 , .frauen-tshirt a >h2 ,.frauen-schuh a>h2{
+    color: rgb(255, 0, 0);
+    font-size: 10px;
+    padding: 2px;
+}
+#damen >p {
+    color: rgb(87, 94, 159);
+    padding: 5px;
+}
+.frauen-tshirt > img,
+.frauen-schuh > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% 50%;
+}
+.frauen-schuh {
+    padding-top: 10px;
+} .herren-tshirt {
+#kinder {
+    position: absolute;
+    border: 2px solid rgb(133, 104, 104);
+   right: 10px;
+     width: 180px;
+ height: 200px;
+ margin-top: 300px;
+ text-align: center;
+ font-size: 5px;
+ border-radius: 10px;
+}
+.kinder-tshirt > img,
+.kinder-schuh > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% 50%;
+}
+#kinder > a>h2 , .kinder-tshirt a >h2 ,.kinder-schuh a>h2{
+    color: rgb(217, 0, 255);
+    font-size: 10px;
+    padding: 2px;
+}
+.kinder-schuh {
+    padding-top: 10px;
+}
+#kinder>p {
+    color: rgb(62, 124, 43);
+    padding: 5px;@media screen and  (max-width:500px){
+        header .navContainer >* {
+         
+            background-color: red;
+        }
+    }
+}
+#herren {
+    position: absolute;
+    border: 2px solid #bd7a7a;
+left: 20px;
+margin-top: 50px;
+  width: 180px;
+ height: 200px;
+ text-align: center;
+ font-size: 5px;
+ border-radius: 10px;
+}
+.herren-tshirt > img,
+.herren-schuh > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% 50%;
+}
+#herren > a>h2 , .herren-tshirt a >h2 ,.herren-schuh a>h2{
+    color: rgb(174, 134, 33);
+    font-size: 10px;
+    padding: 2px;
+}
+.herren-schuh {
+    padding-top: 10px;
+}
+#herren>p {
+    color: rgb(169, 31, 40);
+    padding: 5px;
+} */

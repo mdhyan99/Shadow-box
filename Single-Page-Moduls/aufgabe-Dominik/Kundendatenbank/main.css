@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(174, 140, 69);
+
+}
+ul li{
+    color: rgb(218, 60, 60);
+background-color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
