@@ -1,0 +1,71 @@
+body{
+    background-image: url(https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+text-align: center;
+}
+
+.logo{
+    border-radius: 50% 50%;
+    width: 200px;
+    height: 200px;
+}
+.img1{
+    position: relative;
+   top: 50px;
+}
+.uberschreft{
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 130px;
+/* font-family: 'Press Start 2P', cursive;    */
+font-family: 'Almarai', sans-serif;
+font-family: 'Macondo', cursive;
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Press Start 2P', cursive; */
+}
+p{
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 67px;
+}
+.star{
+    color: goldenrod;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 40px;
+}
+span{
+    color: goldenrod;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 80px;
+}
+.hr1{
+    background-color: rgb(255, 232, 102);
+    height: 15px;
+}
+.hr2{
+    background-color: rgb(255, 232, 102);
+    height: 6px;
+}
+.hr3{
+    background-color: rgb(255, 232, 102);
+    height: 6px;
+} 
+.hr4{
+    background-color: rgb(255, 232, 102);
+    height: 15px;
+}
+.but1{
+    margin-top: 50px;
+     padding-left: 50px;
+     padding-right: 50px;
+ 
+} 
+.but2{
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+} 
